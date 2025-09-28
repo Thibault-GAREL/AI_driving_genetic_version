@@ -1,76 +1,73 @@
-#  Snake AI Using NEAT (NeuroEvolution)
+# 🚗 Driving AI Using Genetic Algorithm
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
-![Neat](https://img.shields.io/badge/Neat-0.92-red.svg)
 ![Numpy](https://img.shields.io/badge/Numpy-2.2.6-red.svg)
 ![Pygame](https://img.shields.io/badge/Pygame-2.6.1-red.svg)
-![OpenPyxl](https://img.shields.io/badge/OpenPyxl-3.1.5-red.svg)  
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)  
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange.svg)  
 
 ## 📝 Project Description 
-This project features an AI that learns to play [My Snake game](https://github.com/Thibault-GAREL/snake_game) autonomously using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. No hardcoded strategies — the agent improves over generations through genetic mutations and natural selection. 🧬🤖
+This project features an AI that learns to drive with [my driving game](https://github.com/Thibault-GAREL/driving_game) autonomously using genetic algorithm (without NEAT). No hardcoded strategies — the agent improves over generations through genetic mutations and natural selection. 🧬🤖
 
 ---
 
 ## ⚙️ Features
   🔄 No supervised learning – only evolution by fitness
 
-  🧠 Networks evolve topologies and weights
+  🧠 Networks evolve weights with crossover and mutation but not topologies (like NEAT)
 
   📊 Real-time simulation with visualization
 
-  🏆 Tracks best fitness, average scores, and generation progress in a Excel
+  🏆 Tracks best fitness, average scores, and generation and save best brains
 
 
 ## Example Outputs
 Here is an image of what it looks like :
 
-![Image_snake](Images/Img_snake.png)
+![Image_snake](img/img.png)
+![Image_snake](img/img_3.png)
+
+Here it's when it starts with all the population alive :
+![Image_snake](img/img_2.png)
+
 
 ---
 
 ## ⚙️ How it works
 
-  🕹️ The AI controls a snake in a classic grid-based [ Snake game](https://github.com/Thibault-GAREL/snake_game).
+  🕹️ The AI controls a car (red when alive ❤️, gray when dead 🩶 and green when the best 💚) in a classic grid-based [🐍 Snake game](https://github.com/Thibault-GAREL/snake_game).
 
-  🧬 It evolves over time using NEAT: networks mutate, reproduce, and get selected based on performance (fitness).
+  🧬 It evolves over time : networks mutate, reproduce, and get selected based on performance (fitness).
 
-  👁️ Visual interface shows the best snake live as it learns.
+  👁️ Visual interface shows the best car live as it learns.
 
-  📈 An Excel is here to track the score or the loss.
 
 ## 🗺️ Schema
-⏳ Training takes time – early generations play poorly but evolve quickly. I train it approximately 15h and the best score is more than 20 apples. It can also **adapt** to different area. Here is the best neural network :
+💡 Here is a schema for a better explanation :
 
-![NN_snake](Images/network_graph.png)
+![NN_snake](Img/img_4.png)
 
-🧪 You can adjust mutation rates, population size, and other parameters in the NEAT config file.
+🧪 You can also withdraw the display for a quicker training (show = False in drive.py) and load a brain (load = True in drive.py and filename = "best_brainXX.npz" in ia.py) !
+
+🔥💻 In 5-10 min, the car is starting to have the best trajectory !
 
 ---
 
 ## 📂 Repository structure  
 ```bash
-├── Images/                 # Images for the README
+├── Img/
 │
-├── best_model_8.pkl        # Saved model checkpoint
-├── best_model_11.pkl       # Saved model checkpoint - the best
+├── best_brain.npz
+├── best_brain2.npz
+├── best_brain__check4.npz
 │
-├── compteur.py             # Counter script
-├── compteur_executions.txt # Execution log for the counter
-├── config.txt              # Neat configuration file
-├── donnees_neat.xlsx       # Training data (Excel) - Graph for score
+├── drive.py
+├── ia.py
+├── main.py
 │
-├── exw.py                  # Excel writer script
-├── ia.py                   # Main AI logic
-├── main.py                 # Project entry point
-├── network_graph/          # Network graph visualization
-│   └── network_graph.png
-├── snake.py                # Snake game implementation
-│
-├── LICENSE                 # Project license
-├── README.md               # Main documentation
+├── LICENSE
+├── README.md
 ```
 
 ---
@@ -78,14 +75,14 @@ Here is an image of what it looks like :
 ## 💻 Run it on Your PC  
 Clone the repository and install dependencies:  
 ```bash
-git clone https://github.com/Thibault-GAREL/snake_game.git
-cd snake_game
+git clone https://github.com/Thibault-GAREL/AI_driving_genetic_version.git
+cd AI_driving_genetic_version
 
 python -m venv .venv #if you don't have a virtual environnement
 source .venv/bin/activate   # Linux / macOS
 .venv\Scripts\activate      # Windows
 
-pip install neat-python numpy pygame openpyxl
+pip install numpy pygame
 
 python main.py
 ```
