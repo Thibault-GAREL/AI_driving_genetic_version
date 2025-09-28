@@ -9,8 +9,8 @@ load = True
 
 population_size = 100
 
-# WIDTH, HEIGHT = 1000, 600
-WIDTH, HEIGHT = 500, 800
+WIDTH, HEIGHT = 1000, 600
+# WIDTH, HEIGHT = 500, 800
 
 if show:
     # Initialisation
@@ -28,61 +28,61 @@ BLUE = (0, 0, 255)
 GREEN = (0, 255, 0)
 YELLOW = (255, 255, 0)
 PURPLE = (255, 0, 255)
-#
-# # Paramètres voiture
-# car_width, car_height = 40, 20
-# max_speed = 5
-# acceleration = 0.2
-# turn_speed = 4
-#
-# # Murs
-# walls = [
-#     pygame.Rect(50, 50, 700, 10),
-#     pygame.Rect(50, 540, 700, 10),
-#     pygame.Rect(50, 50, 10, 500),
-#     pygame.Rect(740, 50, 10, 500),
-#     pygame.Rect(200, 150, 400, 10),
-#     pygame.Rect(200, 150, 10, 300),
-#     pygame.Rect(400, 250, 10, 300),
-#     pygame.Rect(600, 150, 10, 300),
-# ]
-#
-# # Checkpoints
-# checkpoints = [
-#     (180, 110, 40),  # Départ/arrivée
-#     (670, 150, 40),
-#     (600, 495, 40),
-#     (400, 210, 40),
-#     (180, 485, 40)
-# ]
-
 
 # Paramètres voiture
 car_width, car_height = 40, 20
 max_speed = 5
 acceleration = 0.2
-turn_speed = 8
+turn_speed = 4
 
 # Murs
 walls = [
-    pygame.Rect(5, 5, 490, 10),
-    pygame.Rect(5, 750, 490, 10),
-    pygame.Rect(5, 5, 10, 750),
-    pygame.Rect(485, 5, 10, 750),
-    pygame.Rect(110, 150, 290, 10),
-    pygame.Rect(110, 150, 10, 480),
-    pygame.Rect(390, 150, 10, 480),
-    pygame.Rect(250, 300, 10, 450),
+    pygame.Rect(50, 50, 700, 10),
+    pygame.Rect(50, 540, 700, 10),
+    pygame.Rect(50, 50, 10, 500),
+    pygame.Rect(740, 50, 10, 500),
+    pygame.Rect(200, 150, 400, 10),
+    pygame.Rect(200, 150, 10, 300),
+    pygame.Rect(400, 250, 10, 300),
+    pygame.Rect(600, 150, 10, 300),
 ]
 
 # Checkpoints
 checkpoints = [
-    (100, 100, 40),  # Départ/arrivée
-    (400, 100, 40),
-    (400, 695, 40),
-    (250, 230, 40),
-    (100, 695, 40)
+    (180, 110, 40),  # Départ/arrivée
+    (670, 150, 40),
+    (600, 495, 40),
+    (400, 210, 40),
+    (180, 485, 40)
 ]
+
+
+# # Paramètres voiture
+# car_width, car_height = 40, 20
+# max_speed = 5
+# acceleration = 0.2
+# turn_speed = 8
+#
+# # Murs
+# walls = [
+#     pygame.Rect(5, 5, 490, 10),
+#     pygame.Rect(5, 750, 490, 10),
+#     pygame.Rect(5, 5, 10, 750),
+#     pygame.Rect(485, 5, 10, 750),
+#     pygame.Rect(110, 150, 290, 10),
+#     pygame.Rect(110, 150, 10, 480),
+#     pygame.Rect(390, 150, 10, 480),
+#     pygame.Rect(250, 300, 10, 450),
+# ]
+#
+# # Checkpoints
+# checkpoints = [
+#     (100, 100, 40),  # Départ/arrivée
+#     (400, 100, 40),
+#     (400, 695, 40),
+#     (250, 230, 40),
+#     (100, 695, 40)
+# ]
 
 
 class Car:
