@@ -7,6 +7,11 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)  
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange.svg)  
 
+<p align="center">
+  <img src="Img/Driving_NEAT_gif.gif" alt="Driving_NEAT_gif">
+</p>
+
+
 ## 📝 Project Description 
 This project features an AI that learns to drive with [my driving game](https://github.com/Thibault-GAREL/driving_game) autonomously using genetic algorithm (without NEAT). No hardcoded strategies — the agent improves over generations through genetic mutations and natural selection. 🧬🤖
 
