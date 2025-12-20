@@ -30,11 +30,11 @@ This project features an AI that learns to drive with [my driving game](https://
 ## Example Outputs
 Here is an image of what it looks like :
 
-![Image_snake](img/img.png)
-![Image_snake](img/img_3.png)
+![Image_snake](Img/img.png)
+![Image_snake](Img/img_3.png)
 
 Here it's when it starts with all the population alive :
-![Image_snake](img/img_2.png)
+![Image_snake](Img/img_2.png)
 
 
 ---
