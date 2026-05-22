@@ -30,11 +30,17 @@ This project features an AI that learns to drive with [my driving game](https://
 ## Example Outputs
 Here is an image of what it looks like :
 
-![Image_snake](Img/img.png)
-![Image_snake](Img/img_3.png)
+<p align="center">
+  <img src="Img/img.png" alt="Image_snake">
+</p>
+<p align="center">
+  <img src="Img/img_3.png" alt="Image_snake">
+</p>
 
 Here it's when it starts with all the population alive :
-![Image_snake](Img/img_2.png)
+<p align="center">
+  <img src="Img/img_2.png" alt="Image_snake">
+</p>
 
 
 ---
@@ -51,7 +57,9 @@ Here it's when it starts with all the population alive :
 ## 🗺️ Schema
 💡 Here is a schema for a better explanation :
 
-![NN_snake](Img/img_4.png)
+<p align="center">
+  <img src="Img/img_4.png" alt="NN_snake">
+</p>
 
 🧪 You can also withdraw the display for a quicker training (show = False in drive.py) and load a brain (load = True in drive.py and filename = "best_brainXX.npz" in ia.py) !
 
