@@ -15,17 +15,17 @@
 ## 📝 Project Description 
 This project features an AI that learns to drive with [my driving game](https://github.com/Thibault-GAREL/driving_game) autonomously using genetic algorithm (without NEAT). No hardcoded strategies — the agent improves over generations through genetic mutations and natural selection. 🧬🤖
 
+<details>
+<summary>⚙️ <b>Feature list</b></summary>
+
+- No supervised learning, only evolution by fitness
+- Networks evolve weights with crossover and mutation but not topologies (like NEAT)
+- Real-time simulation with visualization
+- Tracks best fitness, average scores, and generation and save best brains
+
+</details>
+
 ---
-
-## ⚙️ Features
-  🔄 No supervised learning – only evolution by fitness
-
-  🧠 Networks evolve weights with crossover and mutation but not topologies (like NEAT)
-
-  📊 Real-time simulation with visualization
-
-  🏆 Tracks best fitness, average scores, and generation and save best brains
-
 
 ## Example Outputs
 Here is an image of what it looks like :
@@ -42,28 +42,21 @@ Here it's when it starts with all the population alive :
   <img src="Img/img_2.png" alt="Image_driving">
 </p>
 
-
 ---
 
-## ⚙️ How it works
+## 🗺️ How it works
 
-  🕹️ The AI controls a car (red when alive ❤️, gray when dead 🩶 and green when the best 💚) in [my driving game](https://github.com/Thibault-GAREL/driving_game).
-
-  🧬 It evolves over time : networks mutate, reproduce, and get selected based on performance (fitness).
-
-  👁️ Visual interface shows the best car live as it learns.
-
-
-## 🗺️ Schema
-💡 Here is a schema for a better explanation :
+Here is a schema for a better explanation :
 
 <p align="center">
   <img src="Img/img_4.png" alt="Genetic_algorithm_schema">
 </p>
 
-🧪 You can also withdraw the display for a quicker training (show = False in drive.py) and load a brain (load = True in drive.py and filename = "best_brainXX.npz" in ia.py) !
+You can also withdraw the display for a quicker training (show = False in drive.py) and load a brain (load = True in drive.py and filename = "best_brainXX.npz" in ia.py) !
 
-🔥💻 In 5-10 min, the car is starting to have the best trajectory !
+In 5-10 min, the car is starting to have the best trajectory !
+
+On screen, a car is red when alive, gray when dead and green when it is the best.
 
 ---
 
