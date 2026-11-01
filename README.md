@@ -31,15 +31,15 @@ This project features an AI that learns to drive with [my driving game](https://
 Here is an image of what it looks like :
 
 <p align="center">
-  <img src="Img/img.png" alt="Image_snake">
+  <img src="Img/img.png" alt="Image_driving">
 </p>
 <p align="center">
-  <img src="Img/img_3.png" alt="Image_snake">
+  <img src="Img/img_3.png" alt="Image_driving">
 </p>
 
 Here it's when it starts with all the population alive :
 <p align="center">
-  <img src="Img/img_2.png" alt="Image_snake">
+  <img src="Img/img_2.png" alt="Image_driving">
 </p>
 
 
@@ -47,7 +47,7 @@ Here it's when it starts with all the population alive :
 
 ## ⚙️ How it works
 
-  🕹️ The AI controls a car (red when alive ❤️, gray when dead 🩶 and green when the best 💚) in a classic grid-based [🐍 Snake game](https://github.com/Thibault-GAREL/snake_game).
+  🕹️ The AI controls a car (red when alive ❤️, gray when dead 🩶 and green when the best 💚) in [my driving game](https://github.com/Thibault-GAREL/driving_game).
 
   🧬 It evolves over time : networks mutate, reproduce, and get selected based on performance (fitness).
 
@@ -58,7 +58,7 @@ Here it's when it starts with all the population alive :
 💡 Here is a schema for a better explanation :
 
 <p align="center">
-  <img src="Img/img_4.png" alt="NN_snake">
+  <img src="Img/img_4.png" alt="Genetic_algorithm_schema">
 </p>
 
 🧪 You can also withdraw the display for a quicker training (show = False in drive.py) and load a brain (load = True in drive.py and filename = "best_brainXX.npz" in ia.py) !
